@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../img/products/dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#first {
+    padding-top: 14%;
+    margin-bottom: 9%;
+}
+
+#head{
+  background-image: url('../img/products/hook.jpg');
+  color: cyan;
+  text-align: center;
+}
+
+.col-md-12 {
+    width: 100%;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    font-size: calc(1vw + 1vh + .5vmin);
+    font-size: 1.1em;
+}
+#word{
+  background-image: url('../img/products/road.jpg');
+  text-decoration-color: red;
+  margin-bottom: 50px;
+  background-position: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+
+}
+.form-cont textarea {
+    margin-top: 10px;
+    width: 100%;
+    background: transparent;
+}
+#contact {
+    padding-top: 10px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: cover;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10%;
+}
+.card {
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+.card:hover img {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+a {
+  color: hotpink;
+}
