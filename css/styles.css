@@ -18,13 +18,13 @@ body {
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
     background-color: #555;
-    color: white;
+    color: black;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    bottom: 23px;
+    bottom: 35px;
     right: 28px;
     width: 280px;
   }
@@ -32,6 +32,7 @@ body {
   /* The popup form - hidden by default */
   .form-popup {
     display: none;
+    color: black;
     position: fixed;
     bottom: 0;
     right: 15px;
@@ -41,7 +42,7 @@ body {
   
   /* Add styles to the form container */
   .form-container {
-    max-width: 300px;
+    max-width: 350px;
     padding: 10px;
     background-color: white;
   }
