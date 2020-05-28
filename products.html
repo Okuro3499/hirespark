@@ -2,14 +2,31 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <title>HireSpark</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/product.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><strong>HireSpark</strong></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
     <!-- Head Section -->
     <div class="container" id="head">
 
@@ -79,7 +96,6 @@
             <label for="equipment" class="lables"><b>Equipment Type:</b></label>
             <select required name="equipment" id="equipment" class="form-control">
                          <option id="tractor" value="3000" label="Tractors"></option>
-
                          <option id="roller" value="4000" label="Rollers"></option>
                          <option id="bull" value="4000" label="Bulldozer"></option>
                      </select>
@@ -90,15 +106,9 @@
 
         <input type="submit" value="Submit"><br><br>
 
-        <!-- link for home button -->
-        <a href="index.html">Home Page</a><br>
-        <a href="contact.html">Contact Us</a><br>
-        <a href="about.html">About Us</a>
-
-
-
-
     </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
