@@ -37,32 +37,45 @@
                 <h1>HireSpark</h1>
                 <h2>HireSpark helps you build your dream, your future when you hire our WORLD CLASS HIGH QUALITY machinery.</h2>
                 <br><br>
-                <a href="#products" class="btn btn-primary js-scroll-trigger">Get Started</a>
+                
             </div>
         </div>
     </header>
-
+    <button type="submit" id="showHire" class="btn btn-success">Get Started</button>
     <!-------------------Pop Up Form for Equipment Hire--------------->
     <div class="form-popup" id="myForm">
         <form class="form-container">
-          <h1>Delivery Address</h1>
+          <h1>Hire Our Equipment</h1>
       
-          <label for="House Number"><b>Make</b></label>
-          <input type="text" placeholder="Enter Make of Equipment" name="houseNumber" required>
+          <label for="Make"><b>Make</b></label>
+          <select id="equipmentMake" class="form-control form-control-lg" id="sel2">
+            <option>Komatsu</option>
+            <option>Caterpilar</option>
+            <option>JCB</option>
+            <option>Mitsubishi</option>
+        </select>
       
-          <label for="Street"><b>Model</b></label>
-          <input type="text" placeholder="Enter Street name" name="street" required>
+          <label for="Equipment Type"><b>Type</b></label>
+          <select id="equipmentMake" class="form-control form-control-lg" id="sel2">
+            <option>Grader</option>
+            <option>Tractor</option>
+            <option>Bulldozer</option>
+            <option>Crane</option>
+        </select>
 
-          <label for="Estate"><b>Type</b></label>
-          <input type="text" placeholder="Enter your Estate" name="estate" required>
+          <label for="dailyRate"><b>Daily Rate</b></label>
+          <input type="text" placeholder="Enter the daily rate" name="rate" required>
 
-          <label for="phoneNo"><b>Daily Rate</b></label>
-          <input type="text" placeholder="Enter your mobile phone number" name="street" required>
+          <label for="numberOfDays"><b>Number of Days</b></label>
+          <input type="text" placeholder="Enter the number of days" name="street" required>
 
-          <label for="phoneNo"><b>Number of Days</b></label>
-          <input type="text" placeholder="Enter your mobile phone number" name="street" required>
+          <label for="collectionPoint"><b>Number of Days</b></label>
+          <select id="equipmentMake" class="form-control form-control-lg" id="sel2">
+            <option>HireSpark</option>
+            <option>Customer</option>
+            </select>
       
-          <button type="submit" id="printButton" class="btn">Print Delivery</button>
+          <button type="submit" id="printButton" class="btn">Print Proforma</button>
           <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
       </div> 

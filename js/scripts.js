@@ -15,9 +15,6 @@ function customer(firstName, lastName, email, password, postalAddress, county, c
 }
 
 //equipment object
-funtion equipment() {
-    
-}
 
 $(document).ready(function (e) {
 
@@ -46,6 +43,12 @@ $(document).ready(function (e) {
         customers.push(customerString);
         //Debug - print customers array
         console.log(customers);
+    });
+
+    $("#showHire").click(function (event) {
+        event.preventDefault();
+        //show the pop up form
+        document.getElementById("myForm").style.display = "block";
     });
 
 });
