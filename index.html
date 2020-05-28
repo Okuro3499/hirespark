@@ -22,6 +22,7 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="#products">Our Products</a></li>
+                <li><a href="register.html">Customer Registration</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
@@ -40,6 +41,31 @@
             </div>
         </div>
     </header>
+
+    <!-------------------Pop Up Form for Equipment Hire--------------->
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+          <h1>Delivery Address</h1>
+      
+          <label for="House Number"><b>Make</b></label>
+          <input type="text" placeholder="Enter Make of Equipment" name="houseNumber" required>
+      
+          <label for="Street"><b>Model</b></label>
+          <input type="text" placeholder="Enter Street name" name="street" required>
+
+          <label for="Estate"><b>Type</b></label>
+          <input type="text" placeholder="Enter your Estate" name="estate" required>
+
+          <label for="phoneNo"><b>Daily Rate</b></label>
+          <input type="text" placeholder="Enter your mobile phone number" name="street" required>
+
+          <label for="phoneNo"><b>Number of Days</b></label>
+          <input type="text" placeholder="Enter your mobile phone number" name="street" required>
+      
+          <button type="submit" id="printButton" class="btn">Print Delivery</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div> 
     <br><br><br><br><br><br>
     <br><br><br><br><br><br>
     <footer>

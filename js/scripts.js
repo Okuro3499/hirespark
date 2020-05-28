@@ -14,6 +14,11 @@ function customer(firstName, lastName, email, password, postalAddress, county, c
     this.optEmail = optEmail;
 }
 
+//equipment object
+funtion equipment() {
+    
+}
+
 $(document).ready(function (e) {
 
     //Retrieve values from UI
