@@ -14,6 +14,8 @@ function customer(firstName, lastName, email, password, postalAddress, county, c
     this.optEmail = optEmail;
 }
 
+//equipment object
+
 $(document).ready(function (e) {
 
     //Retrieve values from UI
@@ -41,6 +43,21 @@ $(document).ready(function (e) {
         customers.push(customerString);
         //Debug - print customers array
         console.log(customers);
+        //push customers into select drop down in Hire form
+        var sel = $("#customerName");
+        console.log(sel)
+        for(var i = 0; i < customers.length; i++) {
+        var opt = document.createElement('option');
+        opt.innerHTML = customers[i];
+        opt.value = customers[i];
+        sel.appendChild(opt);
+}
+    });
+
+    $("#showHire").click(function (event) {
+        event.preventDefault();
+        //show the pop up form
+        document.getElementById("myForm").style.display = "block";
     });
 
 });
