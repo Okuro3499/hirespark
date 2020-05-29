@@ -44,7 +44,8 @@ $(document).ready(function (e) {
         //Debug - print customers array
         console.log(customers);
         //push customers into select drop down in Hire form
-        var sel = document.getElementById('customerName');
+        var sel = $("#customerName");
+        console.log(sel)
         for(var i = 0; i < customers.length; i++) {
         var opt = document.createElement('option');
         opt.innerHTML = customers[i];
