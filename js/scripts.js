@@ -43,6 +43,14 @@ $(document).ready(function (e) {
         customers.push(customerString);
         //Debug - print customers array
         console.log(customers);
+        //push customers into select drop down in Hire form
+        var sel = document.getElementById('customerName');
+        for(var i = 0; i < customers.length; i++) {
+        var opt = document.createElement('option');
+        opt.innerHTML = customers[i];
+        opt.value = customers[i];
+        sel.appendChild(opt);
+}
     });
 
     $("#showHire").click(function (event) {
