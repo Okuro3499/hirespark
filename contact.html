@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
+    <title>HireSpark</title>
     <meta charset="utf-8">
-    <title>CONTACT</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/product.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><strong>HireSpark</strong></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="register.html">Customer Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-      <div class="jumbotron" id="contact">
-        <h1> CONTACT US</h1>
-        <p> While we're good with smoke signals, there are simpler ways for us to get in touch and answer your questions.</p>
+        <div id="contact">
+            <h1> CONTACT US</h1>
+            <p> While we're good with smoke signals, there are simpler ways for us to get in touch and answer your questions.</p>
         </div>
         <form>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="fname" required><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <input type="radio" id="male" name="gender" value="male">
-             <label for="male">Male</label><br>
-             <input type="radio" id="female" name="gender" value="female">
-             <label for="female">Female</label><br>
-             <input type="radio" id="other" name="gender" value="other">
-             <label for="other">Other</label><br>
-             <textarea name="message" rows="10" cols="30">
+            <input type="text" id="lname" name="lname" required><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
 
-              </textarea><br>
-             <input type="submit" value="Submit">
+            <textarea type="text" name="message" rows="10" cols="100"></textarea><br>
+            <button type="submit" class="btn btn-primary js-scroll-trigger" value="Submit">Submit</button>
         </form>
-            <a href="index.html">Home Page</a><br>
-            <a href="about.html">About us</a><br>
-            <a href="products.html">Products</a><br>
-        </div>
+    </div>
 
-  </body>
+    <br><br><br><br><br><br>
+    <footer>
+        <section class="contact-section bg-black">
+            <div class="contact">
+                <div class="social d-flex justify-content-center">
+                    <img src="img/social_icons/facebook.png">
+                    <img src="img/social_icons/twitter.png">
+                </div>
+                <p>Copyright &copy; HireSpark</p>
+                <p>2020</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
